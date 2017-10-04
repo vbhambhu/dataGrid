@@ -1,0 +1,6 @@
+
+
+<h3>All forms</h3>
+<div th:each="form : ${forms}">
+    <a th:href="@{/project(pid=${form.projectId})}" th:text="${from.name}"></a>
+</div>

@@ -1,0 +1,18 @@
+This is project page
+
+<a th:href="@{/form/add(pid=${project.id})}">Add new form</a>
+
+<hr>
+
+<a href="/forms">Forms</a>
+
+
+
+<!--<a th:href="@{/project(pid=${project.id)}" th:text="${project.name}"></a>-->
+
+
+
+<div th:each="form : ${forms}">
+    <a th:href="@{/project/forms(pid=${form.projectId})}" th:text="${from.name}"></a>
+</div>
+<!--<a th:href="@{/project/forms(pid=${form.projectId}, fid=${form.id})}" th:text="${from.name}"></a>-->

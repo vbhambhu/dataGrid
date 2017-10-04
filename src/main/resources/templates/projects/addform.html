@@ -1,0 +1,14 @@
+
+
+<form method="post" th:object="${form}">
+
+    <input type="text" th:value="${projectId}">
+    <div>
+        <label></label>
+        <input type="text" th:field="${form.name}">
+    </div>
+
+    <button type="submit">Add new</button>
+
+</form>
+
